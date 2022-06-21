@@ -1,18 +1,12 @@
 package com.example.car.domain;
 
-import javax.validation.constraints.NotBlank;
-import javax.validation.constraints.NotNull;
-
 import lombok.Data;
 
 import java.util.UUID;
 
 @Data
 public class Car {
-    @NotNull
     private String id;
-    @NotNull
-    @NotBlank
     private String brand;
     private String type;
     private String code;
